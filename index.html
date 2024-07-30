@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boas-vindas</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1>Digite seu nome para receber as boas-vindas!</h1>
+    <input type="text" id="nameInput" placeholder="Digite seu nome">
+    <button onclick="saudacao()">Enviar</button>
+    <p id="welcomeMessage"></p>
+
+    <script>
+        function saudacao() {
+            const nome = document.getElementById('nameInput').value;
+            const mensagem = `Bem-vindo(a), ${nome}!`;
+            document.getElementById('welcomeMessage').innerText = mensagem;
+        }
+    </script>
+</body>
+</html>
